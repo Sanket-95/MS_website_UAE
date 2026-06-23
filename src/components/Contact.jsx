@@ -19,11 +19,6 @@ const CONTACT_ITEMS = [
     lines: ['+971 502988575'],
     href:  'tel:+971502988575',
   },
-  {
-    label: 'Address',
-    lines: ['4203 Bahar 1', 'Jumeirah Beach Residence', 'Dubai, UAE'],
-    href:  null,
-  },
 ];
 
 export default function Contact() {
