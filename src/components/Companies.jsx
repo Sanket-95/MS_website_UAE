@@ -135,6 +135,40 @@ export default function Companies() {
           ))}
         </div>
 
+        {/* Vessel Portfolio */}
+        <motion.div
+          variants={reveal(0.45)}
+          initial="hidden" whileInView="visible"
+          viewport={{ once: true, margin: '-40px' }}
+          className="mt-16 pt-14 border-t border-[#ddd9d0] dark:border-[#2a2a2a]"
+        >
+          <p className="font-body text-[10px] tracking-[0.35em] uppercase text-[#6b6b6b] dark:text-white/50 mb-8">
+            Vessel Portfolio
+          </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { src: '/imgs/vessel-atlantica-server.jpg', name: 'Atlantica Server' },
+              { src: '/imgs/vessel-baltic-bay.jpg',       name: 'Baltic Bay' },
+              { src: '/imgs/vessel-dsi-drammen.jpg',      name: 'DSI Drammen' },
+              { src: '/imgs/vessel-carolina.jpg',         name: 'Chemtrans Carolina' },
+            ].map(({ src, name }) => (
+              <div key={name} className="flex flex-col gap-2">
+                <div className="aspect-[4/3] overflow-hidden bg-[#e8e4db] dark:bg-[#2a2a2a]">
+                  <img
+                    src={src}
+                    alt={name}
+                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="font-body text-[10px] tracking-[0.18em] uppercase text-[#6b6b6b] dark:text-white/45">
+                  {name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
       </div>
     </section>
   );

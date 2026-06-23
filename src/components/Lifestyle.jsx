@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import PhotoPlaceholder from './PhotoPlaceholder';
 
 const reveal = (delay = 0) => ({
   hidden:  { opacity: 0, y: 20, filter: 'blur(4px)' },
@@ -124,17 +123,29 @@ export default function Lifestyle() {
             </motion.div>
           </div>
 
-          {/* Right: photo placeholders */}
+          {/* Right: golf photos */}
           <motion.div
             variants={reveal(0.2)}
             initial="hidden" whileInView="visible"
             viewport={{ once: true, margin: '-60px' }}
             className="grid grid-cols-2 gap-4"
           >
-            <div className="mt-12">
-              <PhotoPlaceholder label="On the Course" variant="card" />
+            <div className="mt-12 aspect-[3/4] overflow-hidden">
+              <img
+                src="/imgs/golf-1.jpg"
+                alt="Manoj Satija at Dubai Golf Championship 2025"
+                className="w-full h-full object-cover object-center"
+                loading="lazy"
+              />
             </div>
-            <PhotoPlaceholder label="At the Club" variant="card" />
+            <div className="aspect-[3/4] overflow-hidden">
+              <img
+                src="/imgs/golf-2.jpg"
+                alt="Manoj Satija celebrating at the golf course"
+                className="w-full h-full object-cover object-center"
+                loading="lazy"
+              />
+            </div>
           </motion.div>
 
         </div>

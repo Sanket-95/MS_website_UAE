@@ -1,7 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
-import PhotoPlaceholder from './PhotoPlaceholder';
 
 const fadeBlur = (delay = 0) => ({
   hidden:  { opacity: 0, filter: 'blur(6px)', y: 14 },
@@ -137,7 +136,12 @@ export default function Hero() {
         <div className="absolute top-8 right-8 w-1.5 h-1.5 rounded-full bg-[#c9a84c] opacity-30 z-10" />
         <div className="absolute top-14 right-8 w-1 h-1 rounded-full bg-[#c9a84c] opacity-20 z-10" />
 
-        <PhotoPlaceholder label="Professional Portrait" variant="panel" />
+        <img
+          src="/imgs/portrait-main.jpg"
+          alt="Manoj Satija — Founder &amp; Chairman, Globetech Group"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          loading="eager"
+        />
       </motion.div>
     </header>
   );
