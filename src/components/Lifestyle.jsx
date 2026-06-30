@@ -108,12 +108,20 @@ export default function Lifestyle() {
               </p>
               <div className="flex flex-col border-t border-[#e8e4db] dark:border-[#2a2a2a]">
                 <div className="py-5 border-b border-[#e8e4db] dark:border-[#2a2a2a]">
+                  <p className="font-display text-xl font-light text-[#1a1a1a] dark:text-white leading-snug mb-1">
+                    SAMPARC
+                  </p>
+                  <p className="font-body text-[11px] text-[#6b6b6b] dark:text-white/45 tracking-[0.22em] uppercase">
+                    Charitable Organisation
+                  </p>
+                </div>
+                <div className="py-5 border-b border-[#e8e4db] dark:border-[#2a2a2a]">
                   <a
                     href="https://tranquilcharity.org/"
                     target="_blank" rel="noopener noreferrer"
                     className="font-display text-xl font-light text-[#1a1a1a] dark:text-white hover:text-[#c9a84c] transition-colors duration-200 leading-snug mb-1 block"
                   >
-                    SAMPARC Tranquill Charity
+                    Tranquil Charity
                   </a>
                   <p className="font-body text-[11px] text-[#6b6b6b] dark:text-white/45 tracking-[0.22em] uppercase">
                     tranquilcharity.org ↗
